@@ -22,7 +22,7 @@ public interface RoundTableMapper {
      * 查询展示前四个圆桌讨论
      * @return List<RoundTable>
      */
-    @Select("SELECT * FROM t_round_table ORDER BY id DESC LIMIT 0,4")
+    @Select("SELECT * FROM t_round_table ORDER BY id LIMIT 0,4")
     List<RoundTable> selectRecent();
 
     /**
